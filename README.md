@@ -73,7 +73,4 @@ Please include at minimum:
 Try to break the model using crafted prompts.
 
 When you find issues:
-- In your private GitHub repo, submit **2–3 example bug reports** as GitHub Issues
-- Include clear reproduction steps (prompt + any needed context)
-- Include expected vs actual behavior
-- Include risk/impact (security, safety, trust, correctness)
+- In your private GitHub repo, submit **bug reports** as GitHub Issues
