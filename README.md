@@ -20,9 +20,9 @@ We do not want this to take any more of your time than necessary, so please do y
 We have created a GPT model for you to use. Let’s just say this model is “dev done”. Here is your access to the [ChatModel](https://chatgpt.com/g/g-698e566b1e308191a1833d693226f44d-support-agent-qa-challenge)!
 
 ### Agent description
-The agent’s purpose is to help users with general product and account questions by referencing an internal FAQ. See FAQ.md for the FAQ
+The agent’s purpose is to help users with general product and account questions by referencing an internal FAQ. See [FAQ.md](https://github.com/pdqcom/QA-AI-SDET-TEST/blob/main/FAQ.md) for the FAQ
 
-Checkout the Policy_Rules.md for allowed and disallowed behavior
+Checkout the [Policy_Rules.md](https://github.com/pdqcom/QA-AI-SDET-TEST/blob/main/Policy_Rules.md) for allowed and disallowed behavior
 
 ### Primary user workflows (high-level)
 - Help users navigate FAQ items quickly and easily
