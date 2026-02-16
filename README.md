@@ -12,12 +12,11 @@ This assessment is meant to imitate what a working environment is like. You are 
 We do not want this to take any more of your time than necessary, so please do yourself a favor and set a maximum 3 hour time limit. 
 
 ## Submission details
-1. To keep your work private from other applicants, pull this repo and create a [mirror](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) in your personal GitHub account
-2. Add your test plan to your private repo, and bugs reported in your Github issues
-3. When you are ready to share, invite nate8282, sowardskimberly, matthewstclaire, michael-nishiguchi, sstodd7532, lukban90, and gena-pdq to your repo. Send an email to Jenna letting her know you are ready to have your work reviewed
+1. Submit all parts of the assignments on 1 PDF document. Please name the document with your name in the format "Last name, Fist Name QA SDET Take Home"
+2. WHen you are ready email Jenna the document. Please submit a pdf file and not a link to a document. 
 
 ## Background information
-We have created a GPT model for you to use. Let’s just say this model is “dev done”. Here is your access to the [ChatModel](https://chatgpt.com/g/g-698e566b1e308191a1833d693226f44d-support-agent-qa-challenge)!
+We have created a GPT model for you to use, named Bob. Let’s just say this model is “dev done”. Here is your access to the [ChatModel](https://chatgpt.com/g/g-698e566b1e308191a1833d693226f44d-support-agent-qa-challenge)!
 
 ### Agent description
 The agent’s purpose is to help users with general product and account questions by referencing an internal FAQ. See [FAQ.md](https://github.com/pdqcom/QA-AI-SDET-TEST/blob/main/FAQ.md) for the FAQ
@@ -35,16 +34,55 @@ Checkout the [Policy_Rules.md](https://github.com/pdqcom/QA-AI-SDET-TEST/blob/ma
 - No code execution 
 
 ## Part 1 — Test Plan
-Create a **test plan** for testing this AI model based on the behavior described above.
+Create a structured **test plan** that uses actual examples from the PDQ Chatbot affectionately named Bob.
 
 Please include at minimum:
-- Functional behavior coverage 
-- LLM-specific risks 
-- Safety & security coverage
-- Test strategy
+### Functional behavior coverage 
+Identify 3-5 key behaviors the assistant should support. 
+
+For each behavior:
+- Provide examples of prompts you could use to test the functionality, referenced from the FAQ
+- Include 1 positive and 1 negative/edge prompt
+- Describe what a good response should include
+- Describe what failure would look like
+- Include screenshots of your conversations with Bob to show good/bad responses for the key behavior
+
+### LLM-specific risks 
+Identify 3-5 risks unique to LLM-based systems:
+
+For each risk:
+- Define what a pass/fail look like for each risk
+- Provide a test prompt and show the results of it being used for each risk provided
+- Run the same prompt 3 times and describe what variance is acceptable vs unacceptable.
+- Briefly explain why this risk matters
+
+### Safety & security coverage
+Identify 3-5 Safety & Security concerns. Include at least one of each of the following: 
+Prompt injection / instruction leakage, PII / data leakage, and Disallowed actions
+
+For each concern:
+- Include example prompts for each Safety & Security concern
+- Show actual output from the chat bot
+- For each concern, include expected safe behavior (refusal + allowed alternative) not just ‘refuse’
+- Explain if the current chatbot passed or failed in the areas you tested and why
+
+### Test strategy
+Briefly explain:
+- How you would structure testing (exploratory, regression, etc.)
+- Assume you have 60 minutes for exploratory testing and 30 minutes to define regression coverage. What do you do first and why?
+- Propose a ‘golden set’ of 10 prompts you’d run after any prompt/model change, and include what each prompt validates
+- Which risks you would prioritize first and why
+- How you would determine whether the model is "ready"
+
+### Automation strategy
+Provide a lightweight approach for automating the 10-prompt regression suite (tool choice + how you’d score outputs). No implementation required
+- Explain how you would deal with non-determinism in CI (retries, thresholds, rubric scoring, human review gates)
+- What tools would you use/recommend?
+
 
 ## Part 2 — Bug Reporting (Hands-on)
-Try to break the model using crafted prompts.
+Try to break the model using crafted prompts, and identify 2-3 bugs with Bob.
 
 When you find issues:
-- In your private GitHub repo, submit **bug reports** as GitHub Issues
+- Report the issue following best practices
+- Propose one regression test prompt that would catch the issue in the future
