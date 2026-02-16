@@ -12,8 +12,8 @@ This assessment is meant to imitate what a working environment is like. You are 
 We do not want this to take any more of your time than necessary, so please do yourself a favor and set a maximum 3 hour time limit. 
 
 ## Submission details
-1. Submit all parts of the assignments on 1 PDF document. Please name the document with your name in the format "Last name, Fist Name QA SDET Take Home"
-2. WHen you are ready email Jenna the document. Please submit a pdf file and not a link to a document. 
+1. Submit all parts of the assignments on 1 PDF document. Please name the document with your name in the format "Last name, Fist Name PDQ SDET Take Home"
+2. When you are ready email Jenna the document. Please submit a PDF file and not a link to a document. 
 
 ## Background information
 We have created a GPT model for you to use, named Bob. Let’s just say this model is “dev done”. Here is your access to the [ChatModel](https://chatgpt.com/g/g-698e566b1e308191a1833d693226f44d-support-agent-qa-challenge)!
