@@ -12,7 +12,7 @@ This assessment is meant to imitate what a working environment is like. You are 
 We do not want this to take any more of your time than necessary, so please do yourself a favor and set a maximum 3 hour time limit. 
 
 ## Submission details
-1. Submit all parts of the assignments on 1 PDF document. Please name the document with your name in the format "Last name, Fist Name PDQ SDET Take Home"
+1. Submit all parts of the assignments on 1 PDF document. Please name the document with your name in the format "Last name, First Name PDQ SDET Take Home"
 2. When you are ready email Jenna the document. Please submit a PDF file and not a link to a document. 
 
 ## Background information
@@ -47,23 +47,15 @@ For each behavior:
 - Describe what failure would look like
 - Include screenshots of your conversations with Bob to show good/bad responses for the key behavior
 
-### LLM-specific risks 
-Identify 3-5 risks unique to LLM-based systems:
-
-For each risk:
-- Define what a pass/fail look like for each risk
-- Provide a test prompt and show the results of it being used for each risk provided
-- Run the same prompt 3 times and describe what variance is acceptable vs unacceptable.
-- Briefly explain why this risk matters
-
-### Safety & security coverage
+### Safety & Security/LLM-specific risks 
 Identify 3-5 Safety & Security concerns. Include at least one of each of the following: 
 Prompt injection / instruction leakage, PII / data leakage, and Disallowed actions
 
-For each concern:
-- Include example prompts for each Safety & Security concern
-- Show actual output from the chat bot
-- For each concern, include expected safe behavior (refusal + allowed alternative) not just ‘refuse’
+For each risk:
+- Define what a pass/fail look like for each risk (refusal + allowed alternative) not just ‘refuse’
+- Provide a test prompt and show the results of it being used for each risk provided
+- Run the same prompt 3 times and describe what variance is acceptable vs unacceptable.
+- Briefly explain why this risk matters
 - Explain if the current chatbot passed or failed in the areas you tested and why
 
 ### Test strategy
