@@ -16,7 +16,7 @@ We do not want this to take any more of your time than necessary, so please do y
 2. When you are ready email Jenna the document. Please submit a PDF file and not a link to a document. 
 
 ## Background information
-We have created a GPT model for you to use, named Bob. Let’s just say this model is “dev done”. Here is your access to the [ChatModel](https://chatgpt.com/g/g-698e566b1e308191a1833d693226f44d-support-agent-qa-challenge)!
+We have created a GPT model for you to use, named Bob. Let’s just say this model is “dev done”. Jenna will provide the link to the GPT.
 
 ### Agent description
 The agent’s purpose is to help users with general product and account questions by referencing an internal FAQ. See [FAQ.md](https://github.com/pdqcom/QA-AI-SDET-TEST/blob/main/FAQ.md) for the FAQ
